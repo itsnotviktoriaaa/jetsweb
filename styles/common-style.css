@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "Agipo";
+    font-weight: normal;
+    src: url("../fonts/AgipoRegular.ttf");
+}
+
+@font-face {
+    font-family: "Agipo";
+    font-weight: bold;
+    src: url("../fonts/AgipoBold.ttf");
+}
+
+@font-face {
+    font-family: "InterLight";
+    src: url("../fonts/InterLight.otf");
+}
+
+@font-face {
+    font-family: "InterRegular";
+    src: url("../fonts/InterRegular.otf");
+}
+
+
+@font-face {
+    font-family: "InterMedium";
+    src: url("../fonts/InterMedium.otf");
+}
+
+@font-face {
+    font-family: "InterSemiBold";
+    src: url("../fonts/InterSemiBold.otf");
+}
+
+@font-face {
+    font-family: "MuseoSansCyrl500";
+    src: url("../fonts/MuseoSansCyrl500.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333333;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button {
+    padding: 11px 41px;
+    font-family: 'Agipo', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #333333;
+    border-radius: 10px;
+}
+
+
+
+.price-right {
+    padding: 35px 40px 55px 35px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.price-write-me {
+    max-width: 328px;
+    font-family: 'Agipo', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 18px;
+}
+
+.social-sites {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.social-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;
+}
+
+.social-site:hover .social-site-icon {
+    transform: scale(1.1);
+}
+
+a.social-site {
+    text-decoration: none;
+}
+
+.social-site-icon {
+    max-width: 35px;
+    transition: all 0.7s;
+}
+
+.social-site-icon img {
+    width: 100%;
+}
+
+.social-site-text {
+    font-family: 'InterRegular', sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+.answer {
+    font-family: 'InterRegular', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    margin-left: 18px;
+}
+
+.answer::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    background: #2F80ED;
+    transform: translate(calc(50% - 16px), calc(50% - -1px));
+}
+
+.price-right span {
+    position: absolute;
+    right: 0px;
+    bottom: -4px;
+}
+
+
+
+
+
+
+/* Underline From Center */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #FFFFFF;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+.footer .hvr-underline-from-center:before {
+    background: #333333;
+}
+
+.cursor-scale svg {
+    animation: cursScale 1.4s infinite linear;
+}
+
+@keyframes cursScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.06);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
