@@ -74,10 +74,24 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    document.querySelectorAll('.logo-path').forEach((item) => {
+        item.addEventListener('click', function() {
+            window.scrollTo(0, 0);
+        });
+    });
+
     document.getElementById('cerf').addEventListener('click', function() {
         const hash = location.hash.slice(1);
         location.href = window.location.href.split('index')[0] + 'certificate.html' + '#' + hash;
     });
+
+    let referrer_url = document.referrer;
+    if (referrer_url.includes('certificate')) {
+        console.log(referrer_url);
+        setTimeout(function() {
+            document.getElementById('meet').scrollIntoView({behavior: "smooth"});
+        }, 100);
+    }
 
 
     $('.center').slick({
