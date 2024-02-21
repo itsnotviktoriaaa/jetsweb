@@ -85,13 +85,13 @@ document.addEventListener('DOMContentLoaded', function () {
         location.href = window.location.href.split('index')[0] + 'certificate.html' + '#' + hash;
     });
 
-    let referrer_url = document.referrer;
-    if (referrer_url.includes('certificate')) {
-        console.log(referrer_url);
-        setTimeout(function() {
-            document.getElementById('meet').scrollIntoView({behavior: "smooth"});
-        }, 100);
-    }
+    // let referrer_url = document.referrer;
+    // if (referrer_url.includes('certificate')) {
+    //     console.log(referrer_url);
+    //     setTimeout(function() {
+    //         document.getElementById('meet').scrollIntoView({behavior: "smooth"});
+    //     }, 100);
+    // }
 
 
     $('.center').slick({
