@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    sessionStorage.setItem('cerf', 'yes');
+
     document.querySelectorAll('.connect').forEach((item) => {
         item.addEventListener('click', function() {
             document.getElementById('footer').scrollIntoView({behavior: "smooth"});
