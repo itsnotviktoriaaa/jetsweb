@@ -26,26 +26,26 @@
                 <nav class="menu">
                     <ul>
                         <li class="hvr-underline-from-center li-stages">
-                            <a>Этапы работы</a>
+                            <a class="lng-stages">Этапы работы</a>
                         </li>
                         <li class="hvr-underline-from-center li-tools">
-                            <a>Технологии</a>
+                            <a class="lng-tools">Технологии</a>
                         </li>
                         <li class="hvr-underline-from-center li-price">
-                            <a>Цены</a>
+                            <a class="lng-price">Цены</a>
                         </li>
                         <li class="hvr-underline-from-center li-examples">
-                            <a>Проекты</a>
+                            <a class="lng-examples">Проекты</a>
                         </li>
                         <li class="hvr-underline-from-center li-experience">
-                            <a>Опыт</a>
+                            <a class="lng-experience">Опыт</a>
                         </li>
                         <li class="hvr-underline-from-center li-education">
-                            <a>Обо мне</a>
+                            <a class="lng-education">Обо мне</a>
                         </li>
                     </ul>
                 </nav>
-                <button class="button header-button connect">Связаться</button>
+                <button class="button header-button connect lng-connect">Связаться</button>
             </div>
         </div>
     </header>
@@ -53,7 +53,7 @@
     <main class="main">
         <div class="container">
             <div class="languages">
-                <div class="language language-rus active">
+                <div id="language-rus" class="language language-rus">
                 <span>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="mask0_508_13" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="2"
@@ -78,11 +78,11 @@
                         </g>
                     </svg>
                 </span>
-                    <span>
+                    <span value="ru">
                     RUS
                 </span>
                 </div>
-                <div class="language language-eng">
+                <div id="language-eng" class="language language-eng">
                 <span>
                     <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_508_43)">
@@ -203,32 +203,32 @@
                         </defs>
                     </svg>
                 </span>
-                    <span>
+                    <span value="en">
                     ENG
                 </span>
                 </div>
             </div>
 
-            <div class="name"><span>Я</span> Виктория Гольцева</div>
+            <div class="name lng-name"><span>Я</span> Виктория Гольцева</div>
             <div id="for-experience" class="main-info">
                 <div class="main-info-img wow animate__animated animate__zoomIn">
                     <img src="images/victoriagoltseva_main_photo.png" alt="Виктория Гольцева веб-разработчик">
                 </div>
                 <div class="main-info-text">
                     <div class="main-info-text-head">
-                        <h1 id="typed-strings" class="h1"><span>Веб-разработчик</span></h1>
-                        <div class="text-typing h1">
+                        <h1 id="typed-strings" class="h1 lng-position"><span>Веб-разработчик</span></h1>
+                        <div id="hide" class="text-typing h1">
                             <span id="typed"></span>
                         </div>
-                        <h2 class="main-info-text-addition"><span>+ веб-дизайнер</span> в одном лице:)</h2>
+                        <h2 class="main-info-text-addition lng-designerPlus"><span>+ веб-дизайнер</span> в одном лице:)</h2>
                     </div>
                     <div class="main-info-text-wrapper">
-                        <div class="main-info-text-description">
+                        <div class="main-info-text-description lng-description">
                             Я разрабатываю сайты под ключ, которые включают в себя маркетинг, дизайн и вёрстку сайта
                         </div>
                         <div class="main-info-buttons">
-                            <button class="button main-button blue-button step-by-step">Шаги работы</button>
-                            <button class="button main-button transparent-button project">Смотреть проекты</button>
+                            <button class="button main-button blue-button step-by-step lng-stepsOfWork">Шаги работы</button>
+                            <button class="button main-button transparent-button project lng-viewProjects">Смотреть проекты</button>
                         </div>
                     </div>
                 </div>
@@ -239,7 +239,7 @@
                 <span class="main-experience-header">
                     2+
                 </span>
-                    <span class="main-experience-body">
+                    <span class="main-experience-body lng-yearsOfExperience">
                     года опыта
                 </span>
                 </div>
@@ -247,15 +247,15 @@
                 <span class="main-experience-header">
                    40+
                 </span>
-                    <span class="main-experience-body">
+                    <span class="main-experience-body lng-completedProjects">
                     выполненных проектов
                 </span>
                 </div>
                 <div class="main-experience">
-                <span class="main-experience-header">
+                <span class="main-experience-header lng-headForIT">
                    США/USA
                 </span>
-                    <span class="main-experience-body">
+                    <span class="main-experience-body lng-ITCompany">
                     стажировалась в IT-компании на большом и сложном Angular-проекте для американского рынка
                 </span>
                 </div>
@@ -263,7 +263,7 @@
                 <span class="main-experience-header">
                     24/7
                 </span>
-                    <span class="main-experience-body">
+                    <span class="main-experience-body lng-inTouch">
                     на связи
                 </span>
                 </div>
@@ -2871,15 +2871,15 @@
 </svg>
         </span>
         <div class="goal-info">
-            <span class="title-rectangle">Это нормально</span>
-            <h3 class="goal-title wow animate__animated animate__fadeInLeftBig">В <span>80%</span> случаев заказчик не знает, как хочет видеть свой сайт</h3>
-            <div class="goal-description wow animate__animated animate__fadeInLeftBig"><span>Моя цель</span> - помочь выделить и использовать ваши преимущества таким образом, чтобы они были понятны и привлекательны для вашей аудитории. <span>Я специализируюсь на адаптации сильных сторон вашего бизнеса к языку сайтового маркетинга</span></div>
+            <span class="title-rectangle lng-normal">Это нормально</span>
+            <h3 class="goal-title wow animate__animated animate__fadeInLeftBig lng-eighty">В <span>80%</span> случаев заказчик не знает, как хочет видеть свой сайт</h3>
+            <div class="goal-description wow animate__animated animate__fadeInLeftBig lng-goal"><span>Моя цель</span> - помочь выделить и использовать ваши преимущества таким образом, чтобы они были понятны и привлекательны для вашей аудитории. <span>Я специализируюсь на адаптации сильных сторон вашего бизнеса к языку сайтового маркетинга</span></div>
         </div>
         <div class="goal-right">
             <div class="goal-me">
                 <img src="images/goal-img.png" alt="Виктория Гольцева веб-разработчик">
             </div>
-            <span class="goal-addition">
+            <span class="goal-addition lng-fullMe">
                 Виктория Гольцева, веб-разработчик
             </span>
         </div>
@@ -5484,34 +5484,34 @@
 
 <section id="work" class="work">
     <div class="container">
-        <h2 class="title title-work">Что входит в мою работу?</h2>
+        <h2 class="title title-work lng-titleIncluded">Что входит в мою работу?</h2>
         <div class="work-items">
             <div class="work-item">
                 <div class="work-item-circle">01</div>
-                <div class="work-item-title">Исследование</div>
-                <div class="work-item-description">
+                <div class="work-item-title lng-research">Исследование</div>
+                <div class="work-item-description lng-resDescription">
                     Определяю задачу и тип сайта, провожу <span>анализ</span> компании, её клиентов и конкурентов
                 </div>
             </div>
             <div class="work-item">
                 <div class="work-item-circle">02</div>
-                <div class="work-item-title">Дизайн сайта</div>
-                <div class="work-item-description">
+                <div class="work-item-title lng-websiteDesign">Дизайн сайта</div>
+                <div class="work-item-description lng-webDesignDescription">
                     Составляю <span>дизайн</span> компьютерной версии сайта и отправляю его на <span>согласование.</span> После утверждения перехожу к разработке дизайна мобильной версии
                 </div>
             </div>
             <div class="work-item">
                 <div class="work-item-circle">03</div>
-                <div class="work-item-title">Вёрстка сайта</div>
-                <div class="work-item-description">
+                <div class="work-item-title lng-siteLayout">Вёрстка сайта</div>
+                <div class="work-item-description lng-siteLayoutDescription">
                     Верстаю на <span>чистом коде</span> или на платформах конструкторах Tilda / Lpmotor. Осуществляю <span>запуск</span> сайта в интернете
                 </div>
             </div>
         </div>
-        <div class="work-addition">Вы можете <span>заказать</span> у меня как сайт под ключ, так и только дизайн или вёрстку уже имеющегося дизайна сайта</div>
+        <div class="work-addition lng-stepAddition">Вы можете <span>заказать</span> у меня как сайт под ключ, так и только дизайн или вёрстку уже имеющегося дизайна сайта</div>
         <div class="common-buttons wow animate__animated animate__fadeInUpBig">
-            <button class="button second-button yellow-button etc-steps">Подробнее о шагах работы</button>
-            <button class="button second-button transparent-button connect">Консультация</button>
+            <button class="button second-button yellow-button etc-steps lng-buttonLearnMore">Подробнее о шагах работы</button>
+            <button class="button second-button transparent-button connect lng-buttonConsultation">Консультация</button>
         </div>
     </div>
 </section>
@@ -5519,7 +5519,7 @@
 <section id="tools" class="tools">
     <div class="container">
         <div class="tools-wrapper">
-            <h2 class="title title-tools wow animate__animated animate__fadeInLeftBig">Какими <span>инструментами</span> я владею?</h2>
+            <h2 class="title title-tools wow animate__animated animate__fadeInLeftBig lng-titleTools">Какими <span>инструментами</span> я владею?</h2>
             <div class="tools-items">
                 <div class="tools-item">
                     <div class="tools-item-img">
@@ -5652,53 +5652,53 @@
             </svg>
         </div>
         </div>
-        <div class="tools-addition">*Выбор технологий зависит от масштаба и задачи сайта</div>
+        <div class="tools-addition lng-chooseTech">*Выбор технологий зависит от масштаба и задачи сайта</div>
     </div>
 </section>
 
 <section id="trust" class="trust">
     <div class="container">
-        <h2 class="title trust-title">Мне доверились</h2>
+        <h2 class="title trust-title lng-titleTrust">Мне доверились</h2>
         <div class="trust-items">
             <div class="trust-item">
                 <img src="images/trust/itlogia.png" alt="Айтилогия. IT-школа. Frontend-разработка">
-                <span class="trust-item-head">Лендинг</span>
-                <span class="trust-item-description">Крупнейшая IT-школа в СНГ</span>
+                <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                <span class="trust-item-description lng-itlogia">Крупнейшая IT-школа в СНГ</span>
             </div>
             <div class="trust-item">
                 <img src="images/trust/itlogia2.png" alt="Айтилогия. IT-школа. Frontend-разработка">
-                <span class="trust-item-head">Лендинг</span>
-                <span class="trust-item-description">Крупнейшая IT-школа в СНГ</span>
+                <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                <span class="trust-item-description lng-itlogia">Крупнейшая IT-школа в СНГ</span>
             </div>
             <div class="trust-item">
                 <img src="images/trust/beauty.png" alt="Сайт для продажи косметики">
-                <span class="trust-item-head">Многостраничный сайт</span>
-                <span class="trust-item-description">Крупный бренд косметики в РБ и СНГ</span>
+                <span class="trust-item-head lng-titleMultiSite">Многостраничный сайт</span>
+                <span class="trust-item-description lng-cosmetics">Крупный бренд косметики в РБ и СНГ</span>
             </div>
             <div class="trust-item">
                 <img src="images/trust/gift.png" alt="Оптовая продажа новогодних подарков">
-                <span class="trust-item-head">Лендинг</span>
-                <span class="trust-item-description">Оптовая продажа новогодних подарков</span>
+                <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                <span class="trust-item-description lng-yearGift">Оптовая продажа новогодних подарков</span>
             </div>
             <div class="trust-item">
                 <img src="images/trust/ritual.png" alt="Ритуальные услуги">
-                <span class="trust-item-head">Лендинг</span>
-                <span class="trust-item-description">Ритуальные услуги</span>
+                <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                <span class="trust-item-description lng-ritual">Ритуальные услуги</span>
             </div>
             <div class="trust-item">
                 <img src="images/trust/box.png" alt="Сайт для подарочных боксов">
-                <span class="trust-item-head">Лендинг</span>
-                <span class="trust-item-description">Продажа подарочных боксов</span>
+                <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                <span class="trust-item-description lng-sellBoxes">Продажа подарочных боксов</span>
             </div>
             <div class="trust-item">
                 <img src="images/trust/event.png" alt="Популярный ведущий мероприятий в СНГ">
-                <span class="trust-item-head">Лендинг</span>
-                <span class="trust-item-description">Популярный ведущий мероприятий в СНГ</span>
+                <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                <span class="trust-item-description lng-event">Популярный ведущий мероприятий в СНГ</span>
             </div>
         </div>
         <div class="common-buttons wow animate__animated animate__fadeInUpBig">
-            <button class="button second-button yellow-button etc-steps">Подробнее о шагах работы</button>
-            <button class="button second-button transparent-button connect">Консультация</button>
+            <button class="button second-button yellow-button etc-steps lng-buttonLearnMore">Подробнее о шагах работы</button>
+            <button class="button second-button transparent-button connect lng-buttonConsultation">Консультация</button>
         </div>
     </div>
 </section>
@@ -5713,88 +5713,88 @@
                 <div class="center">
                     <div class="trust-item">
                         <img src="images/else/online.png" alt="Интернет-магазин на Angular">
-                        <span class="trust-item-head">Интернет-магазин</span>
+                        <span class="trust-item-head lng-onlineStore">Интернет-магазин</span>
                         <span class="trust-item-description">Angular, TypeScript, JavaScript, SCSS, HTML</span>
                     </div>
                     <div class="trust-item">
-                        <img src="images/else/homes.png" alt="SPA-приложение">
-                        <span class="trust-item-head">Веб-приложение</span>
-                        <span class="trust-item-description">Учёт домашних финансов с авторизацией</span>
+                        <img src="images/else/homes.png" alt="Web-приложение">
+                        <span class="trust-item-head lng-webApplication">Веб-приложение</span>
+                        <span class="trust-item-description lng-accountHome">Учёт домашних финансов с авторизацией</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/honey.png" alt="Лендинг для продажи мёда">
-                        <span class="trust-item-head">Лендинг</span>
-                        <span class="trust-item-description">Лендинг для продажи мёда</span>
+                        <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                        <span class="trust-item-description lng-honey">Лендинг для продажи мёда</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/machine.png" alt="Лендинг для автомойки">
-                        <span class="trust-item-head">Лендинг</span>
-                        <span class="trust-item-description">Лендинг для автомойки</span>
+                        <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                        <span class="trust-item-description lng-homeCar">Лендинг для автомойки</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/car.png" alt="Аренда премиальных авто">
-                        <span class="trust-item-head">SPA-приложение</span>
-                        <span class="trust-item-description">Аренда премиальных авто</span>
+                        <span class="trust-item-head lng-SPAApplication">SPA-приложение</span>
+                        <span class="trust-item-description lng-carOrder">Аренда премиальных авто</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/movements.png" alt="Изготовление и продажа памятников">
-                        <span class="trust-item-head">Многостраничный сайт</span>
-                        <span class="trust-item-description">Изготовление и продажа памятников</span>
+                        <span class="trust-item-head lng-titleMultiSite">Многостраничный сайт</span>
+                        <span class="trust-item-description lng-movementsSell">Изготовление и продажа памятников</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/laptop.png" alt="Доставка здорового питания">
-                        <span class="trust-item-head">Лендинг</span>
-                        <span class="trust-item-description">Доставка здорового питания</span>
+                        <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                        <span class="trust-item-description lng-healthyFood">Доставка здорового питания</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/web.png" alt="Веб-приложение для веб-студии">
-                        <span class="trust-item-head">Веб-приложение</span>
-                        <span class="trust-item-description">Выкладка статей с функцией комментариев</span>
+                        <span class="trust-item-head lng-webApplication">Веб-приложение</span>
+                        <span class="trust-item-description lng-articles">Выкладка статей с функцией комментариев</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/hookah.png" alt="Лендинг для кальянной">
-                        <span class="trust-item-head">Лендинг</span>
-                        <span class="trust-item-description">Лендинг для кальянной</span>
+                        <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                        <span class="trust-item-description lng-hookah">Лендинг для кальянной</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/adidas.png" alt="Дизайн для продажи кроссовок">
-                        <span class="trust-item-head">Лендинг</span>
-                        <span class="trust-item-description">Дизайн для продажи кроссовок</span>
+                        <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                        <span class="trust-item-description lng-sneakers">Дизайн для продажи кроссовок</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/homeworks.png" alt="Сайт для домашних работ">
-                        <span class="trust-item-head">Веб-приложение</span>
-                        <span class="trust-item-description">Сайт для домашних работ</span>
+                        <span class="trust-item-head lng-webApplication">Веб-приложение</span>
+                        <span class="trust-item-description lng-homeWorks">Сайт для домашних работ</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/maldives.png" alt="Дизайн для туристических услуг">
-                        <span class="trust-item-head">Лендинг</span>
-                        <span class="trust-item-description">Дизайн для туристических услуг</span>
+                        <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                        <span class="trust-item-description lng-journey">Дизайн для туристических услуг</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/earsphones.png" alt="Лендинг для продажи наушников">
-                        <span class="trust-item-head">Лендинг</span>
-                        <span class="trust-item-description">Продажа наушников</span>
+                        <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                        <span class="trust-item-description lng-ears">Продажа наушников</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/cat.png" alt="Зоогостиница  для кошек">
-                        <span class="trust-item-head">Лендинг</span>
-                        <span class="trust-item-description">Зоогостиница  для кошек</span>
+                        <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                        <span class="trust-item-description lng-zoo">Зоогостиница  для кошек</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/sushi.png" alt="Лендинг для продажи роллов">
-                        <span class="trust-item-head">Лендинг</span>
-                        <span class="trust-item-description">Лендинг для продажи роллов</span>
+                        <span class="trust-item-head lng-titleLanding">Лендинг</span>
+                        <span class="trust-item-description lng-sushi">Лендинг для продажи роллов</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/macaroons.png" alt="Лендинг для продажи Macaroons">
-                        <span class="trust-item-head">Лендинг</span>
+                        <span class="trust-item-head lng-titleLanding">Лендинг</span>
                         <span class="trust-item-description">Лендинг для продажи Macaroons</span>
                     </div>
                     <div class="trust-item">
                         <img src="images/else/quiz.png" alt="Прохождение теста с выводом результатов">
-                        <span class="trust-item-head">Quiz/Квиз</span>
-                        <span class="trust-item-description">Прохождение теста с выводом результатов</span>
+                        <span class="trust-item-head lng-quiz">Quiz/Квиз</span>
+                        <span class="trust-item-description lng-quizDescription">Прохождение теста с выводом результатов</span>
                     </div>
                 </div>
             </div>
@@ -5803,15 +5803,15 @@
 
         <section id="etc" class="etc">
             <div class="container">
-                <h2 class="title etc-title">Давайте <span>подробнее</span> поговорим о том, как я <span>работаю</span></h2>
+                <h2 class="title etc-title lng-titleSpeakMore">Давайте <span>подробнее</span> поговорим о том, как я <span>работаю</span></h2>
                 <div class="etc-headers">
-                    <div id="marketing" class="etc-header etc-header-first active">
+                    <div id="marketing" class="etc-header etc-header-first active lng-marketingMore">
                         Маркетинг
                     </div>
-                    <div id="design" class="etc-header etc-header-second">
+                    <div id="design" class="etc-header etc-header-second lng-designMore">
                         Дизайн
                     </div>
-                    <div id="layout" class="etc-header etc-header-third">
+                    <div id="layout" class="etc-header etc-header-third lng-layoutMore">
                         Вёрстка
                         <span class="cursor-scale">
                             <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -5845,32 +5845,32 @@
                 </div>
                 <div id="marketing-info" class="etc-info etc-info-marketing active">
                     <div class="etc-info-head">
-                        <div class="etc-info-head-steps">Шаги</div>
-                        <div class="etc-info-head-title">Маркетинг</div>
+                        <div class="etc-info-head-steps lng-stepsText">Шаги</div>
+                        <div class="etc-info-head-title lng-marketingMore">Маркетинг</div>
                     </div>
-                    <div class="etc-info-body">
-                        Встретимся или созвонимся с Вами, обсудим Ваш бизнес. Если у Вас нет четкого понимания того, что и какую информацию Вы хотите видеть на сайте, то проведу бриф (задаю уточняющие вопросы). Провожу исследования и анализ компании, клиентов, конкурентов, определю задачу/тип сайта, правильные смыслы, преимущества, чем зацепить посетителя, как построить структуру сайта.  Обговорим все детали работы ещё раз.
+                    <div class="etc-info-body lng-marketingMoreDescription">
+                        Встретимся или созвонимся с Вами, обсудим Ваш бизнес. Если у Вас нет четкого понимания того, что и какую информацию Вы хотите видеть на сайте, то проведу бриф (задаю уточняющие вопросы). Провожу исследования и анализ компании, клиентов, конкурентов, определю задачу/тип сайта, правильные смыслы, преимущества, чем зацепить посетителя, как построить структуру сайта.  Обговорим все детали работы ещё раз
                     </div>
                 </div>
                 <div id="design-info" class="etc-info etc-info-design">
                     <div class="etc-info-head">
-                        <div class="etc-info-head-steps">Шаги</div>
-                        <div class="etc-info-head-title">Дизайн</div>
+                        <div class="etc-info-head-steps lng-stepsText">Шаги</div>
+                        <div class="etc-info-head-title lng-designMore">Дизайн</div>
                     </div>
-                    <div class="etc-info-body">
+                    <div class="etc-info-body lng-designMoreDescription">
                         Исходя из результатов анализа определяю цветовую палитру (если у компании нет собственной айдентики), шрифты, UI-элементы, UX-дизайн (удобство пользования, навигация).  Составляю прототип компьютерной версии сайта и отправляю его на согласование. После утверждения перехожу к разработке дизайна мобильной версии
                     </div>
                 </div>
                 <div id="layout-info" class="etc-info etc-info-layout">
                     <div class="etc-info-head">
-                        <div class="etc-info-head-steps">Шаги</div>
-                        <div class="etc-info-head-title">Вёрстка и выкладка на хостинг</div>
+                        <div class="etc-info-head-steps lng-stepsText">Шаги</div>
+                        <div class="etc-info-head-title lng-layoutMoreEtc">Вёрстка и выкладка на хостинг</div>
                     </div>
-                    <div class="etc-info-body">
+                    <div class="etc-info-body lng-layoutMoreDescription">
                         Определение инстументов для разработки и вёрстка в соответствии с дизайном (Pixel Perfect), продумывание архитектуры приложения/сайта, адаптив сайта под все виды экранов (телефон, планшет, компьютер), кроссбраузерность (правильная работа сайта во всех часто используемых браузерах), валидация форм на сайте (если имеется), отправка информации о клиенте с помощью PHP (если пользователь заполнил форму), анимация сайта, оптимизация сайта (для более быстрой загрузки), выкладка на хостинг, подключение SSL-сертификата
                     </div>
                 </div>
-                <div class="etc-addition">Вы можете <span>заказать</span> у меня как сайт под ключ, так и только дизайн или вёрстку уже имеющегося дизайна сайта</div>
+                <div class="etc-addition lng-stepAddition">Вы можете <span>заказать</span> у меня как сайт под ключ, так и только дизайн или вёрстку уже имеющегося дизайна сайта</div>
             </div>
         </section>
 
@@ -8473,22 +8473,22 @@
 </svg>
             </span>
                 <div class="goal-info">
-                    <span class="title-rectangle wow animate__animated animate__fadeInLeftBig">Давайте расскажу, где я училась</span>
-                    <div class="goal-description">
+                    <span class="title-rectangle wow animate__animated animate__fadeInLeftBig lng-whereIStudied">Давайте расскажу, где я училась</span>
+                    <div class="goal-description lng-university">
                         <span>Высшее образование в области маркетинга</span> (маркетолог-экономист)
                         <br>Белорусский Государственный Экономический Университет
                         <br>Годы: 2019-2023
                     </div>
-                    <div class="goal-description">
+                    <div class="goal-description lng-frontendItlogia">
                         12-месячный курс <span>“Frontend-разработчик”</span> в IT-школе “Айтилогия”
                     </div>
-                    <div class="goal-description">
+                    <div class="goal-description lng-formula">
                         2-месячный курс <span>“Формула сайтов”</span>
                     </div>
-                    <div class="goal-description">
+                    <div class="goal-description lng-newman">
                         3-месячный курс <span>“Как научится делать сайты”</span> в Академии сайтостроения
                     </div>
-                    <div class="meet-addition">
+                    <div class="meet-addition lng-improve">
                         <span>+</span> постоянно повышаю свою квалификацию на различных интенсивах
                     </div>
                 </div>
@@ -8497,7 +8497,7 @@
                         <img src="images/meet-img.png" alt="Виктория Гольцева веб-разработчик">
                     </div>
                     <span>
-                    <a class="goal-addition" target="_blank" href="certificate.html">Посмотреть сертификаты</a>
+                    <a id="cerf" class="goal-addition lng-checkCertificates" target="_blank">Посмотреть сертификаты</a>
                 </span>
                 </div>
                 <span class="circle-below">
@@ -11100,8 +11100,8 @@
         </section>
 
         <div class="common-buttons wow animate__animated animate__fadeInUpBig">
-            <button class="button second-button yellow-button etc-steps">Подробнее о шагах работы</button>
-            <button class="button second-button transparent-button connect">Консультация</button>
+            <button class="button second-button yellow-button etc-steps lng-buttonLearnMore">Подробнее о шагах работы</button>
+            <button class="button second-button transparent-button connect lng-buttonConsultation">Консультация</button>
         </div>
     </section>
 </div>
@@ -11110,43 +11110,43 @@
 <div id="why" class="light-gray-wrapper">
     <section class="why">
         <div class="container">
-            <h2 class="title why-title">Почему выбирают меня?</h2>
+            <h2 class="title why-title lng-whyMe">Почему выбирают меня?</h2>
             <div class="why-items">
                 <div class="why-item why-item-small">
                     <div class="why-item-icon">
                         <img src="images/icons_for_why/sand_watch.png" alt="Часы">
                     </div>
-                    <div class="why-item-text">Строго соблюдаю дедлайны. Следую техническому заданию</div>
+                    <div class="why-item-text lng-deadlines">Строго соблюдаю дедлайны. Следую техническому заданию</div>
                 </div>
                 <div class="why-item why-item-small">
                     <div class="why-item-icon">
                         <img src="images/icons_for_why/source_code.png" alt="Код">
                     </div>
-                    <div class="why-item-text">Верстаю сайты БЕЗ багов</div>
+                    <div class="why-item-text lng-withoutBugs">Верстаю сайты БЕЗ багов</div>
                 </div>
                 <div class="why-item why-item-small">
                     <div class="why-item-icon">
                         <img src="images/icons_for_why/consultation.png" alt="Консультация">
                     </div>
-                    <div class="why-item-text">Консультация удобным для Вас способом</div>
+                    <div class="why-item-text lng-consultReason">Консультация удобным для Вас способом</div>
                 </div>
                 <div class="why-item why-item-small">
                     <div class="why-item-icon">
                         <img src="images/icons_for_why/cinema.png" alt="Видео">
                     </div>
-                    <div class="why-item-text">Видео с разбором как менять текст и тому подобное</div>
+                    <div class="why-item-text lng-videoReason">Видео с разбором как менять текст и тому подобное</div>
                 </div>
                 <div class="why-item why-item-big why-item-fifth">
                     <div class="why-item-icon">
                         <img src="images/icons_for_why/internet.png" alt="Интернет">
                     </div>
-                    <div class="why-item-text">Отправляю на согласование и делаю правки столько раз, сколько необходимо ДО оплаты. Поэтому сайт запускается в наилучшем виде</div>
+                    <div class="why-item-text lng-approveReason">Отправляю на согласование и делаю правки столько раз, сколько необходимо ДО оплаты. Поэтому сайт запускается в наилучшем виде</div>
                 </div>
                 <div class="why-item why-item-big why-item-sixth">
                     <div class="why-item-icon">
                         <img src="images/icons_for_why/laptop_with_cursor.png" alt="SEO">
                     </div>
-                    <div class="why-item-text">Могу разработать всё под ключ, посоветовать контекстолога или SEO-шника, т.е. избавлю от головной боли от поиска всех специалистов</div>
+                    <div class="why-item-text lng-allReason">Могу разработать всё под ключ, посоветовать контекстолога или SEO-шника, т.е. избавлю от головной боли от поиска всех специалистов</div>
                 </div>
             </div>
         </div>
@@ -11155,15 +11155,15 @@
     <section id="price" class="price">
         <div class="container">
             <div class="price-left">
-                <h2 class="title price-title">Стоимость проекта зависит от масштаба работы</h2>
-                <div class="price-bold">от 200$ до 2500$+</div>
+                <h2 class="title price-title lng-titlePrice">Стоимость проекта зависит от масштаба работы</h2>
+                <div class="price-bold lng-fromToPrice">от 200$ до 2500$+</div>
                 <div class="price-percent-wrapper wow animate__animated animate__fadeInLeft">
                     <div class="price-percent-img"></div>
-                    <div class="price-percent-text">Для достижения <span>95% точности</span> в определении <span>стоимости</span>, я задам серию вопросов о задачах и содержании сайта</div>
+                    <div class="price-percent-text lng-ninetyFivePercent">Для достижения <span>95% точности</span> в определении <span>стоимости</span>, я задам серию вопросов о задачах и содержании сайта</div>
                 </div>
             </div>
             <div class="price-right">
-                <h4 class="price-write-me">Напишите мне в любой мессенджер для бесплатной консультации</h4>
+                <h4 class="price-write-me lng-messengerAny">Напишите мне в любой мессенджер для бесплатной консультации</h4>
                 <div class="social-sites">
                     <a class="social-site" target="_blank" href="https://t.me/jetsweb">
                         <div class="social-site-icon">
@@ -11184,7 +11184,7 @@
                         <div class="social-site-text">WhatsApp</div>
                     </a>
                 </div>
-                <div class="answer">Отвечу в течение 20 минут:)</div>
+                <div class="answer lng-twentyMinutes">Отвечу в течение 20 минут:)</div>
                 <span class="cursor-scale">
                     <svg width="71" height="69" viewBox="0 0 71 69" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M64.7847 43.8047L61.167 37.8877L62.595 35.1255L62.6867 35.0682L52.2858 18.0604L49.9449 19.5381L48.4651 17.1179L46.1249 18.5949L44.6444 16.1754L39.9628 19.1303L38.4836 16.7104L31.4619 21.1422L29.9821 18.722L25.3005 21.6768L19.3817 11.9973L17.0411 13.4744L15.561 11.0549L10.8132 14.0516L9.95224 17.9484L9.96532 17.9688L7.35606 22.969L17.7026 39.8867L12.4282 43.2154L9.83205 48.2361L11.3538 50.7247L14.3137 55.5646L16.6538 54.0871L18.1336 56.5073L20.4745 55.0296L23.434 59.8696L25.7749 58.3919L28.7338 63.2315L31.0754 61.7546L34.0343 66.5942L36.3754 65.1169L39.3347 69.9564L40.8148 72.376L61.8806 59.081L64.287 57.5621L66.8841 52.5412L63.2655 46.6245L64.6944 43.862L64.7847 43.8047Z" fill="black"/>
@@ -11227,34 +11227,34 @@
             <nav class="footer-menu">
                 <ul>
                     <li class="hvr-underline-from-center li-examples">
-                        <a>Примеры работ</a>
+                        <a class="lng-examplesFooter">Примеры работ</a>
                     </li>
                     <li class="hvr-underline-from-center li-price">
-                        <a>Цены</a>
+                        <a class="lng-price">Цены</a>
                     </li>
                     <li class="hvr-underline-from-center li-stages">
-                        <a>Этапы работ</a>
+                        <a class="lng-stages">Этапы работ</a>
                     </li>
                     <li class="hvr-underline-from-center li-education">
-                        <a>О моём образовании</a>
+                        <a class="lng-aboutMyEducationFooter">О моём образовании</a>
                     </li>
                     <li class="hvr-underline-from-center li-why">
-                        <a>Почему выбирают меня</a>
+                        <a class="lng-whyMeFooter">Почему выбирают меня</a>
                     </li>
                     <li class="hvr-underline-from-center li-experience">
-                        <a>Обо мне в цифрах</a>
+                        <a class="lng-aboutMeFooter">Обо мне в цифрах</a>
                     </li>
                     <li class="hvr-underline-from-center li-tools">
-                        <a>Технологии</a>
+                        <a class="lng-tools">Технологии</a>
                     </li>
                     <li class="hvr-underline-from-center li-goal">
-                        <a>Моя цель</a>
+                        <a class="lng-goalFooter">Моя цель</a>
                     </li>
                 </ul>
             </nav>
 
             <div class="footer-below">
-                <div class="footer-below-text wow animate__animated animate__fadeInLeft">Напишите мне в любой мессенджер для бесплатной консультации</div>
+                <div class="footer-below-text wow animate__animated animate__fadeInLeft lng-messengerAny">Напишите мне в любой мессенджер для бесплатной консультации</div>
                 <div class="price-right">
                     <div class="social-sites">
                         <a class="social-site" target="_blank" href="https://t.me/jetsweb">
@@ -11276,7 +11276,7 @@
                             <div class="social-site-text">WhatsApp</div>
                         </a>
                     </div>
-                    <div class="answer">Отвечу в течение 20 минут:)</div>
+                    <div class="answer lng-twentyMinutes">Отвечу в течение 20 минут:)</div>
                     <span class="cursor-scale">
                     <svg width="71" height="69" viewBox="0 0 71 69" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M64.7847 43.8047L61.167 37.8877L62.595 35.1255L62.6867 35.0682L52.2858 18.0604L49.9449 19.5381L48.4651 17.1179L46.1249 18.5949L44.6444 16.1754L39.9628 19.1303L38.4836 16.7104L31.4619 21.1422L29.9821 18.722L25.3005 21.6768L19.3817 11.9973L17.0411 13.4744L15.561 11.0549L10.8132 14.0516L9.95224 17.9484L9.96532 17.9688L7.35606 22.969L17.7026 39.8867L12.4282 43.2154L9.83205 48.2361L11.3538 50.7247L14.3137 55.5646L16.6538 54.0871L18.1336 56.5073L20.4745 55.0296L23.434 59.8696L25.7749 58.3919L28.7338 63.2315L31.0754 61.7546L34.0343 66.5942L36.3754 65.1169L39.3347 69.9564L40.8148 72.376L61.8806 59.081L64.287 57.5621L66.8841 52.5412L63.2655 46.6245L64.6944 43.862L64.7847 43.8047Z" fill="black"/>
@@ -11320,6 +11320,8 @@
 <script src="slick/slick.min.js"></script>
 <script src="scripts/wow.min.js"></script>
 <script src="scripts/typed.js"></script>
+<script src="scripts/lang-script.js" type="module"></script>
+<script src="scripts/hrefconnectedwithbuttons.js" type="module"></script>
 <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -6,6 +6,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    document.querySelectorAll('.back-to-main').forEach((item) => {
+        item.addEventListener('click', function() {
+            console.log(location);
+            const href = location.hash.slice(1);
+            location.href = window.location.href.split('certificate')[0] + 'index.html' + '#' + href;
+        });
+    });
+
 
 });
 

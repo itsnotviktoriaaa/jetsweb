@@ -7,9 +7,13 @@
     margin-bottom: 20px;
 }
 
+.back-to-main a {
+    text-decoration: underline 1px solid #333333;
+    cursor: pointer;
+}
+
 .certificate-main {
-    margin-top: 85px;
-    padding: 100px 0;
+    padding: 50px 0 50px 0;
 }
 
 .certificate-main h1 {
@@ -28,6 +32,7 @@
     column-gap: 10px;
     row-gap: 30px;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .certificate {

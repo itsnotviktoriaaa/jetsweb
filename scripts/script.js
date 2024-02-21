@@ -1,14 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-
-    let typed = new Typed('#typed', { // Тут id того блока, в которм будет анимация
-        stringsElement: '#typed-strings', // Тут id блока из которого берем строки для анимации
-        typeSpeed: 100, // Скорость печати
-        startDelay: 0, // Задержка перед стартом анимации
-        backSpeed: 50, // Скорость удаления
-        loop: true // Указываем, повторять ли анимацию
-    });
-
     new WOW().init();
 
     document.querySelectorAll('.li-examples').forEach((item) => {
@@ -81,6 +72,11 @@ document.addEventListener('DOMContentLoaded', function () {
         item.addEventListener('click', function() {
             document.getElementById('etc').scrollIntoView({behavior: "smooth"});
         });
+    });
+
+    document.getElementById('cerf').addEventListener('click', function() {
+        const hash = location.hash.slice(1);
+        location.href = window.location.href.split('index')[0] + 'certificate.html' + '#' + hash;
     });
 
 

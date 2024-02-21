@@ -59,48 +59,6 @@
     padding: 50px 0 140px 0;
 }
 
-.languages {
-    display: flex;
-    align-items: center;
-    column-gap: 4px;
-    justify-content: flex-end;
-    margin-bottom: 5px;
-}
-
-.language {
-    background: #333333;
-    padding: 8px 12px;
-    height: 36px;
-    cursor: pointer;
-}
-
-.language.active {
-    background: #2F80ED;
-}
-
-.language-rus {
-    border-radius: 20px 0 0 20px;
-}
-
-.language-rus span:last-child {
-    position: relative;
-    top: -5px;
-}
-
-.language-eng {
-    border-radius: 0 20px 20px 0;
-}
-
-.language span:first-child {
-    margin-right: 5px;
-}
-
-.language span:last-child {
-    font-family: 'InterRegular', sans-serif;
-    font-size: 14px;
-    color: #FFFFFF;
-}
-
 .name {
     font-family: 'Agipo', sans-serif;
     font-weight: normal;
@@ -141,7 +99,7 @@
     bottom: 12px;
 }
 
-.h1 {
+.h1, .h1 span {
     font-family: 'Agipo', sans-serif;
     font-weight: normal;
     font-size: 65px;
@@ -728,6 +686,7 @@
 
 .meet a.goal-addition {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .meet .circle-below {
