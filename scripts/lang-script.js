@@ -444,5 +444,17 @@ export const langArr = {
     mainTitle: {
         ru: 'Создание сайтов, лендингов, интернет-магазинов',
         en: 'Creation of websites, landing pages, online stores'
+    },
+    resumeTransform: {
+        ru: 'Моё резюме на англ.',
+        en: 'My resume in english'
+    },
+    footerLanguageEn: {
+        ru: 'Английский: B2',
+        en: 'English: B2'
+    },
+    footerLanguagePol: {
+        ru: 'Польский: А1',
+        en: 'Polish: A1'
     }
 }
