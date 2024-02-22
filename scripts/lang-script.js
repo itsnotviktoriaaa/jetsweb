@@ -441,4 +441,8 @@ export const langArr = {
         ru: 'Мои работы ещё <span>:)</span>',
         en: 'My works more <span>:)</span>'
     },
+    mainTitle: {
+        ru: 'Создание сайтов, лендингов, интернет-магазинов',
+        en: 'Creation of websites, landing pages, online stores'
+    }
 }

@@ -132,7 +132,13 @@ document.addEventListener('DOMContentLoaded', function load() {
                      }
 
                  }
+
              }
+
+            if (key === 'mainTitle') {
+                elem = document.querySelector('title');
+                elem.innerHTML = arr[key][lang];
+            }
         }
 
         if (firstOpeningThisPage) {
