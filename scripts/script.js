@@ -104,14 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
         autoplaySpeed: 5000,
         responsive: [
             {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 480,
+                breakpoint: 750,
                 settings: {
                     arrows: false,
                     slidesToShow: 1
