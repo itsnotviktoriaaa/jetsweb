@@ -719,6 +719,14 @@
 
 }
 
+@media screen and (max-width: 415px) {
+
+    .goal-right {
+        margin: 0 auto;
+    }
+
+}
+
 @media screen and (max-width: 400px) {
 
     .tools-item-img {
@@ -785,6 +793,67 @@
 
 @media screen and (max-width: 371px) {
 
+    .title {
+        font-size: 18px;
+    }
+
+    .title-rectangle {
+        font-size: 10px;
+    }
+
+    .main .container {
+        text-align: center;
+    }
+
+    .main-info {
+        margin-bottom: 10px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .main-info-img {
+        max-width: 174px;
+    }
+
+    .main-info-text-wrapper {
+        display: none;
+    }
+
+    .main-info-text-wrapper-adaptive {
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .main-info-text-description {
+        font-size: 14px;
+    }
+
+    .work-item-description {
+        font-size: 12px;
+        line-height: unset;
+    }
+
+    .work-addition {
+        font-size: 12px;
+    }
+
+    .goal-description {
+        font-size: 12px;
+    }
+
+    .tools-wrapper {
+        padding: 60px 10px 60px 20px;
+    }
+
+    .tools-item-title {
+        font-size: 12px;
+    }
+
+    .tools-addition {
+        font-size: 12px;
+    }
+
     .trust-item-description {
         max-width: 163px;
         line-height: 12px;
@@ -796,23 +865,71 @@
         height: 5px;
     }
 
+    .etc-header {
+        font-size: 12px;
+    }
+
+    .etc-info {
+        row-gap: 15px;
+    }
+
+    .etc-info-body {
+        font-size: 12px;
+    }
+
+    .etc-addition {
+        font-size: 12px;
+    }
+
+    .why-item-text {
+        font-size: 12px;
+        line-height: unset;
+    }
+
+    .price-write-me, .footer-below-text {
+        font-size: 14px;
+        line-height: unset;
+    }
+
+    .answer {
+        font-size: 12px;
+    }
+
+    .footer-menu ul {
+        row-gap: 20px;
+    }
+
+    .footer ul li a {
+        font-size: 12px;
+        line-height: unset;
+    }
+
+    .price-right span {
+        bottom: -10px;
+    }
+
 
 
 }
 
 @media screen and (max-width: 370px) {
 
-
+.price-percent-wrapper {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    text-align: center;
+}
 
 }
 
 @media screen and (max-width: 365px) {
 
-    .etc .trust-item-description {
-        top: 12px;
-        left: 11px;
-        line-height: unset;
-    }
+.etc .trust-item-description {
+    top: 12px;
+    left: 11px;
+    line-height: unset;
+}
 
 
 }

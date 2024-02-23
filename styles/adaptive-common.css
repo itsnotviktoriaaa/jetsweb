@@ -73,3 +73,10 @@
     }
 
 }
+
+@media screen and (max-width: 371px) {
+
+    .button {
+        padding: 11px 29px;
+    }
+}
