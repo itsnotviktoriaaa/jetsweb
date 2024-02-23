@@ -1065,3 +1065,12 @@
 .main-info-text-wrapper-adaptive {
     display: none;
 }
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-adaptive-wrapper {
+    display: none;
+}

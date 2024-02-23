@@ -46,6 +46,18 @@
 
 }
 
+@media screen and (max-width: 600px) {
+
+    .button {
+        font-size: 14px;
+    }
+
+    .header-button {
+        height: 40px;
+    }
+
+}
+
 @media screen and (max-width: 513px) {
 
     .button {
@@ -70,6 +82,10 @@
 
     .slick-dots {
         bottom: -60px;
+    }
+
+    .header .button {
+        padding: 11px 15px;
     }
 
 }
