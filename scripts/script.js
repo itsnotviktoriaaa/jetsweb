@@ -2,74 +2,164 @@ document.addEventListener('DOMContentLoaded', function () {
 
     new WOW().init();
 
+    const burgerOpen = document.querySelector('.burger-open');
+    const menu = document.querySelector('.header');
+    const menuAdaptive = document.querySelector('.menu-adaptive-wrapper');
+    const main = document.querySelector('.main');
+    const burgerClose = document.querySelector('.burger-close');
+
     document.querySelectorAll('.li-examples').forEach((item) => {
         item.addEventListener('click', function() {
+
+            if (menuAdaptive.style.display === 'block') {
+                menu.style.display = 'block';
+                main.style.marginTop = '80px';
+                menuAdaptive.style.display = 'none';
+            }
+
             document.getElementById('trust').scrollIntoView({behavior: "smooth"});
         });
     });
 
     document.querySelectorAll('.li-price').forEach((item) => {
         item.addEventListener('click', function() {
+
+            if (menuAdaptive.style.display === 'block') {
+                menu.style.display = 'block';
+                main.style.marginTop = '80px';
+                menuAdaptive.style.display = 'none';
+            }
+
             document.getElementById('price').scrollIntoView({behavior: "smooth"});
         });
     });
 
     document.querySelectorAll('.li-stages').forEach((item) => {
         item.addEventListener('click', function() {
+
+            if (menuAdaptive.style.display === 'block') {
+                menu.style.display = 'block';
+                main.style.marginTop = '80px';
+                menuAdaptive.style.display = 'none';
+            }
+
             document.getElementById('work').scrollIntoView({behavior: "smooth"});
         });
     });
 
     document.querySelectorAll('.li-tools').forEach((item) => {
         item.addEventListener('click', function() {
+
+            if (menuAdaptive.style.display === 'block') {
+                menuAdaptive.style.display = 'none';
+                menu.style.display = 'block';
+                main.style.marginTop = '80px';
+            }
+
             document.getElementById('tools').scrollIntoView({behavior: "smooth"});
         });
     });
 
     document.querySelectorAll('.li-goal').forEach((item) => {
         item.addEventListener('click', function() {
+
+            if (menuAdaptive.style.display === 'block') {
+                menuAdaptive.style.display = 'none';
+                menu.style.display = 'block';
+                main.style.marginTop = '80px';
+            }
+
             document.getElementById('goal').scrollIntoView({behavior: "smooth"});
         });
     });
 
     document.querySelectorAll('.li-experience').forEach((item) => {
         item.addEventListener('click', function() {
+
+            if (menuAdaptive.style.display === 'block') {
+                menuAdaptive.style.display = 'none';
+                menu.style.display = 'block';
+                main.style.marginTop = '80px';
+            }
+
             document.getElementById('for-experience').scrollIntoView({behavior: "smooth"});
         });
     });
 
     document.querySelectorAll('.li-why').forEach((item) => {
         item.addEventListener('click', function() {
+
+            if (menuAdaptive.style.display === 'block') {
+                menuAdaptive.style.display = 'none';
+                menu.style.display = 'block';
+                main.style.marginTop = '80px';
+            }
+
             document.getElementById('why').scrollIntoView({behavior: "smooth"});
         });
     });
 
     document.querySelectorAll('.li-education').forEach((item) => {
         item.addEventListener('click', function() {
+
+            if (menuAdaptive.style.display === 'block') {
+                menuAdaptive.style.display = 'none';
+                menu.style.display = 'block';
+                main.style.marginTop = '80px';
+            }
+
             document.getElementById('meet').scrollIntoView({behavior: "smooth"});
         });
     });
 
     document.querySelectorAll('.connect').forEach((item) => {
         item.addEventListener('click', function() {
+
+            if (menuAdaptive.style.display === 'block') {
+                menuAdaptive.style.display = 'none';
+                menu.style.display = 'block';
+                main.style.marginTop = '80px';
+            }
+
             document.getElementById('footer').scrollIntoView({behavior: "smooth"});
         });
     });
 
     document.querySelectorAll('.step-by-step').forEach((item) => {
         item.addEventListener('click', function() {
+
+            if (menuAdaptive.style.display === 'block') {
+                menuAdaptive.style.display = 'none';
+                menu.style.display = 'block';
+                main.style.marginTop = '80px';
+            }
+
             document.getElementById('work').scrollIntoView({behavior: "smooth"});
         });
     });
 
     document.querySelectorAll('.project').forEach((item) => {
         item.addEventListener('click', function() {
+
+            if (menuAdaptive.style.display === 'block') {
+                menuAdaptive.style.display = 'none';
+                menu.style.display = 'block';
+                main.style.marginTop = '80px';
+            }
+
             document.getElementById('trust').scrollIntoView({behavior: "smooth"});
         });
     });
 
     document.querySelectorAll('.etc-steps').forEach((item) => {
         item.addEventListener('click', function() {
+
+            if (menuAdaptive.style.display === 'block') {
+                menuAdaptive.style.display = 'none';
+                menu.style.display = 'block';
+                main.style.marginTop = '80px';
+            }
+
             document.getElementById('etc').scrollIntoView({behavior: "smooth"});
         });
     });
@@ -184,6 +274,19 @@ document.addEventListener('DOMContentLoaded', function () {
         infoWhichShouldBeOpened.classList.add('active');
     }
 
+    burgerOpen.addEventListener('click', function() {
+        menu.style.display = 'none';
+        main.style.marginTop = '0';
+        menuAdaptive.style.display = 'block';
+    });
+
+
+
+    burgerClose.addEventListener('click', function() {
+        menu.style.display = 'block';
+        main.style.marginTop = '80px';
+        menuAdaptive.style.display = 'none';
+    });
 
 });
 
