@@ -16,11 +16,9 @@ document.addEventListener('DOMContentLoaded', function load() {
     const languageEng = document.getElementById('language-eng');
 
     if (lang === 'ru') {
-        languageEng.setAttribute('disabled', 'disabled');
-        languageEng.style.cursor = 'not-allowed';
+        languageEng.addEventListener('click', openSnackBarInBottom);
     } else if (lang === 'en') {
-        languageRus.setAttribute('disabled', 'disabled');
-        languageRus.style.cursor = 'not-allowed';
+        languageRus.addEventListener('click', openSnackBarInBottom);
     }
 
     const isCertificatePage = location.href.includes('certificate');
@@ -29,14 +27,25 @@ document.addEventListener('DOMContentLoaded', function load() {
         time = 0;
     }
 
+    function openSnackBarInBottom() {
+        if (!isCertificatePage) {
+            document.getElementById('snack').style.display = 'flex';
+
+            setTimeout(() => {
+                document.getElementById('snack').style.display = 'none';
+            }, 3500);
+
+        }
+    }
+
     setTimeout(function() {
         if (lang === 'ru') {
-            languageEng.removeAttribute('disabled');
             languageEng.style.cursor = 'pointer';
+            languageEng.removeEventListener('click', openSnackBarInBottom);
             languageEng.addEventListener('click', checkAndAddClassActive);
         } else if (lang === 'en') {
-            languageRus.removeAttribute('disabled');
             languageRus.style.cursor = 'pointer';
+            languageRus.removeEventListener('click', openSnackBarInBottom);
             languageRus.addEventListener('click', checkAndAddClassActive);
         }
 
