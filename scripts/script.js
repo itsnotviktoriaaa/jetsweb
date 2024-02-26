@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('cerf').addEventListener('click', function() {
         const hash = location.hash.slice(1);
-        location.href = window.location.href.split('index')[0] + 'certificate.html' + '#' + hash;
+        location.href = window.location.href.split('github.io/jetsweb')[0] + 'github.io/jetsweb/certificate.html' + '#' + hash;
     });
 
     let cerf = sessionStorage.getItem('cerf');
