@@ -580,6 +580,32 @@
 
 @media screen and (max-width: 513px) {
 
+
+    .main-info {
+        margin-bottom: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .main-info-img {
+       width: 100%;
+    }
+
+    .main-info-text-wrapper {
+        display: none;
+    }
+
+    .main-info-text-wrapper-adaptive {
+        display: block;
+        margin-bottom: 30px;
+        /*text-align: center;*/
+    }
+
+
+    .main-info-text-description {
+        font-size: 16px;
+    }
+
+
     .work, .tools, .trust, .price {
         padding-top: 75px;
     }
@@ -608,16 +634,12 @@
         padding: 50px 0 75px 0;
     }
 
-    .main-info-img {
-        max-width: 131px;
-    }
+    /*.main-info-img {*/
+    /*    max-width: 131px;*/
+    /*}*/
 
     .main-info-text-addition {
         font-size: 17px;
-    }
-
-    .main-info-text-description {
-        font-size: 14px;
     }
 
     .main-experience-header {
@@ -861,7 +883,6 @@
 
     .main-info {
         margin-bottom: 10px;
-        flex-direction: column-reverse;
         align-items: center;
     }
 
@@ -874,9 +895,8 @@
     }
 
     .main-info-text-wrapper-adaptive {
-        display: block;
-        margin-bottom: 30px;
         text-align: center;
+        font-size: 14px;
     }
 
     .main-info-text-description {
