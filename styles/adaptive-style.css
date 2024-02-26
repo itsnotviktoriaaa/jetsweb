@@ -588,6 +588,7 @@
 
     .main-info-img {
        width: 100%;
+       max-width: 90%;
     }
 
     .main-info-text-wrapper {
@@ -602,7 +603,7 @@
 
 
     .main-info-text-description {
-        font-size: 16px;
+        font-size: 20px;
     }
 
 
