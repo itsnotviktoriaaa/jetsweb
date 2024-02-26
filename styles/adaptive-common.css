@@ -66,6 +66,15 @@
 
 }
 
+@media screen and (max-width: 455px) {
+
+    .snack {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+}
+
 @media screen and (max-width: 425px) {
 
     .main-button {

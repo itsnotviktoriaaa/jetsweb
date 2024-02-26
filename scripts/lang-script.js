@@ -456,5 +456,9 @@ export const langArr = {
     footerLanguagePol: {
         ru: 'Польский: А1',
         en: 'Polish: A1'
+    },
+    snack: {
+        ru: 'Английский язык будет доступен через пару секунд:)',
+        en: 'Russian language will be accessed through some seconds:)'
     }
 }

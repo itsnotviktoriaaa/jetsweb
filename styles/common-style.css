@@ -200,11 +200,28 @@ a.social-site {
 
 .price-right span {
     position: absolute;
-    right: 0px;
+    right: 0;
     bottom: -4px;
 }
 
+.snack-wrapper {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    width: 100vw;
+    justify-content: center;
+    padding: 0 15px;
+}
 
+.snack {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgba(51, 51, 51, 0.87);
+    color: #FFFFFF;
+    font-family: 'InterRegular', sans-serif;
+    font-size: 14px;
+}
 
 /* Underline From Center */
 .hvr-underline-from-center {

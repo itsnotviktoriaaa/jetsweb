@@ -11,4 +11,8 @@ export const langArrForCertificates = {
         ru: 'Сертификаты веб-разработчика',
         en: 'Web Developer Certificates'
     },
+    snack: {
+        ru: 'Английский язык будет доступен через пару секунд:)',
+        en: 'Russian language will be accessed through some seconds:)'
+    }
 }
