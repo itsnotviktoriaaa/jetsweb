@@ -769,10 +769,6 @@
         font-size: 25px;
     }
 
-    .main-info-img {
-        max-width: 118px;
-    }
-
     .main-info-text-addition {
         font-size: 14px;
     }
@@ -885,10 +881,6 @@
     .main-info {
         margin-bottom: 10px;
         align-items: center;
-    }
-
-    .main-info-img {
-        max-width: 174px;
     }
 
     .main-info-text-wrapper {
