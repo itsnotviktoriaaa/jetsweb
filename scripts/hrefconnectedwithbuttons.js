@@ -5,6 +5,7 @@ import { langArrForCertificates } from './lang-certificate.js';
 document.addEventListener('DOMContentLoaded', function load() {
 
     let lang = location.href.split('#')[1];
+    console.log(location.href);
     let firstOpeningThisPage = true;
 
     const languageRus = document.getElementById('language-rus');
