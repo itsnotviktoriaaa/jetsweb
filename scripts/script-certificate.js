@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    sessionStorage.removeItem('page');
     sessionStorage.setItem('cerf', 'yes');
 
     document.querySelectorAll('.connect').forEach((item) => {

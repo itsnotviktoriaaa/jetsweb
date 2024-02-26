@@ -5,8 +5,9 @@ import { langArrForCertificates } from './lang-certificate.js';
 document.addEventListener('DOMContentLoaded', function load() {
 
     let lang = location.href.split('#')[1];
-    console.log(location.href);
     let firstOpeningThisPage = true;
+
+    sessionStorage.setItem('page', 'index');
 
     const languageRus = document.getElementById('language-rus');
     const languageEng = document.getElementById('language-eng');
@@ -103,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function load() {
 
     function changeLanguage(lang) {
         let arr = langArr;
-        const isMainPage = location.href.includes('index');
+        const isMainPage = (sessionStorage.getItem('page') === 'index');
         if (!isMainPage) {
             arr = langArrForCertificates;
         }
@@ -149,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function load() {
 
     }
 
-    const isMainPage = location.href.includes('index');
+    const isMainPage = (sessionStorage.getItem('page') === 'index');
 
     if (isMainPage) {
         let typed = new Typed('#typed', { // Тут id того блока, в которм будет анимация
