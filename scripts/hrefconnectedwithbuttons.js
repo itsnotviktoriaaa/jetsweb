@@ -104,6 +104,9 @@ document.addEventListener('DOMContentLoaded', function load() {
 
     function changeLanguage(lang) {
         let arr = langArr;
+        if (location.href.includes('certificate')) {
+            sessionStorage.removeItem('page');
+        }
         const isMainPage = (sessionStorage.getItem('page') === 'index');
         if (!isMainPage) {
             arr = langArrForCertificates;
