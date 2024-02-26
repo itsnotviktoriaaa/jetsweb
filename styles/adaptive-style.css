@@ -631,6 +631,10 @@
         font-size: 28px;
     }
 
+    .name {
+        margin-bottom: 10px;
+    }
+
     .main {
         padding: 50px 0 75px 0;
     }
@@ -640,7 +644,9 @@
     /*}*/
 
     .main-info-text-addition {
-        font-size: 17px;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
     .main-experience-header {
@@ -770,11 +776,11 @@
     }
 
     .main-info-text-addition {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .main-info-text-description {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .trust-item-description {
