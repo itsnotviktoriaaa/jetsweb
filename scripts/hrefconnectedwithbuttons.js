@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function load() {
     let firstOpeningThisPage = true;
 
     sessionStorage.setItem('page', 'index');
+    if (location.href.includes('certificate')) {
+        sessionStorage.removeItem('page');
+    }
 
     const languageRus = document.getElementById('language-rus');
     const languageEng = document.getElementById('language-eng');
@@ -104,9 +107,6 @@ document.addEventListener('DOMContentLoaded', function load() {
 
     function changeLanguage(lang) {
         let arr = langArr;
-        if (location.href.includes('certificate')) {
-            sessionStorage.removeItem('page');
-        }
         const isMainPage = (sessionStorage.getItem('page') === 'index');
         if (!isMainPage) {
             arr = langArrForCertificates;
